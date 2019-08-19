@@ -1,60 +1,94 @@
-# The Plain
+## Phantom for Jekyll
 
-> The Plain is a minimalist Jekyll theme, ideally designed for your personal blog use. This Jekyll theme provides a minimum distraction so you can focus on writing that matters to you and your readers. This theme is originally inspired from [Leonard Lamprecht's _leo_ theme](https://github.com/leo/leo.github.io).
+A minimalist, responsive portfolio theme for [Jekyll](http://jekyllrb.com/) with Bootstrap.
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![GENERATOR](https://img.shields.io/badge/made_with-jekyll-blue.svg) ![VERSION](https://img.shields.io/badge/current_version-4.0-green.svg) ![TRAVIS-CI](https://travis-ci.org/heiswayi/the-plain.svg?branch=master)
+![preview](preview.jpg)
 
-- **Demo:** https://heiswayi.github.io/the-plain/
+[See it in action](http://jamigibbs.github.io/phantom/).
 
-![SCREENSHOT](https://i.imgur.com/FITKN1H.png)
+## Fancy using it for your own site?
 
-## Usage
+Here are some steps to get you started:
 
-### On an unlimited Jekyll host
+1. Clone this repo and cd into the directory:
 
-> **NOTE** This does NOT work on GitHub, see the next section.
+  ```bash
+  git clone https://github.com/jamigibbs/phantom.git your-dir-name && cd your-dir-name
+  ```
 
-Put this in your *Gemfile*:
+2. Run Jekyll:
 
-	gem 'the-plain'
+  ```bash
+  bundle exec jekyll serve
+  ```
 
-and run `bundle install` to install the plugin.
+  _Don't have Jekyll yet? [Get `er installed then!](http://jekyllrb.com/docs/installation/)_
 
-Add this to your sites *_config.yml* file:
+3. Visit in your browser at:
 
-	theme: the-plain
+  `http://127.0.0.1:4000`
 
-Then copy some of the settings from this repo's *_config.yml* file to your own, and modify them.
+## Launching with Github Pages :rocket:
 
-### On GitHub
+Jekyll + Github pages is a marriage made in heaven. You can [use your own custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) or use the default Github url (ie. http://username.github.io/repository) and not bother messing around with DNS settings.
 
-GitHub - for your user account pages or repository gh-pages - only supports a limited set of themes.
+## Theme Features
 
-Therefore, you need to use the 'remote\_theme:' setting instead of 'theme:', which is supported by [a 3rd party plugin](https://github.com/benbalter/jekyll-remote-theme).
+### Navigation
 
-Put this in your *Gemfile*:
+Navigation can be customized in `_config.yml` under the `nav_item` key. Default settings:
 
-	gem 'jekyll-remote-theme'
+```yaml
+nav_item:
+    - { url: '/', text: 'Home' }
+    - { url: '/about', text: 'About' }
+```
 
-and run `bundle install` to install the plugin.
+Set the `nav_enable` variable to false in `_config.yml` to disable navigation.
 
-Add the following to your site's *_config.yml* to activate the plugin and to select this theme:
+### Contact Form
 
-	plugins:
-	  - jekyll-remote-theme
+You can display a contact form within the modal window template. This template is already setup to use the [Formspree](https://formspree.io) email system. You'll just want to add your email address to the form in `/_includes/contact-modal.html`.
 
-	remote_theme: heiswayi/the-plain
+Place the modal window template in any place you'd like the user to click for the contact form.
+The template will display a link to click for the contact form modal window:
 
-This will grab the theme directly from the GitHub repo.
+```liquid
+{% include contact.html %}
+{% include contact-modal.html %}
+```
 
-Now copy some of the settings from this repo's *_config.yml* file to your own, and modify them.
+### Animation Effects
 
-## Authors
+Animations with CSS classes are baked into the theme. To animate a section or element, simply add the animation classes:
 
-- [**Heiswayi Nrird**](https://heiswayi.nrird.com)
+```html
+<div id="about-me" class="wow fadeIn">
+  I'm the coolest!
+</div>
+```
 
-See also the list of [contributors](https://github.com/heiswayi/the-plain/graphs/contributors) who participated in this project.
+For a complete list of animations, see the [animation list](http://daneden.github.io/animate.css/).
 
-## License
+### Pagination
 
-[MIT](LICENSE)
+By default, pagination on the home page will activate after 10 posts. You can change this within `_config.yml`. You can add the pagination to other layouts with:
+
+```liquid
+  {% for post in paginator.posts %}
+    {% include post-content.html %}
+  {% endfor %}
+
+  {% include pagination.html %}
+```
+
+Read more about the [pagination plugin](http://jekyllrb.com/docs/pagination/).
+
+## Credit
+
+* Bootstrap, http://getbootstrap.com/, (C) 2011 - 2016 Twitter, Inc., [MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
+
+* Wow, https://github.com/matthieua/WOW, (C) 2014 - 2016 Matthieu Aussaguel
+, [GPL](https://github.com/matthieua/WOW#open-source-license)
+
+* Animate.css, https://github.com/daneden/animate.css, (C) 2016 Daniel Eden, [MIT](https://github.com/daneden/animate.css/blob/master/LICENSE)
