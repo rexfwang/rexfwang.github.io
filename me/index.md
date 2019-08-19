@@ -1,6 +1,6 @@
 ---
-layout: index.md.layout
-title: index.md.title
+layout: me
+title: About me
 ---
 
-idex.md
+About meee.
