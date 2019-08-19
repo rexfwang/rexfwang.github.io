@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Hello. I'm Rex Wang."
+title: "I'm Rex Wang."
 email: 'rex.f.wang@gmail.com'
-description: "I'm a software developer and designer from Chicago creating useful things for the web."
+description: "Computer vision, user interface, Windows OS development, research project prototyping, and performance analysis. Modern C++, C, Python, Matlab, Arm Neon assembly, XAML and WinRT."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://rexfwang.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ''
@@ -30,9 +30,9 @@ plugins:
 
 ### Phantom settings
 paginate: 10
-footer_text: '© 2018 Jami Gibbs'
-admin_name: 'Jami Gibbs'
-google_analytics: "UA-9999999-99" # Update with your own tracking ID
+footer_text: '© 2018 Rex Wang'
+admin_name: 'Rex Wang'
+google_analytics: "" # Update with your own tracking ID
 enable_contact: false
 
 #### Phantom Navigation menu
