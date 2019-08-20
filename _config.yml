@@ -31,7 +31,7 @@ plugins:
 
 ### Phantom settings
 paginate: 10
-footer_text: '© 2019 Rex Wang. Forked from https://github.com/jamigibbs/phantom'
+footer_text: '© 2019 Rex Wang'
 admin_name: 'Rex Wang'
 google_analytics: "" # Update with your own tracking ID
 enable_contact: false
