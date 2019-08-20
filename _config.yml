@@ -21,7 +21,7 @@ url: "http://rexfwang.github.io" # the base hostname & protocol for your site, e
 twitter_username: ''
 github_username: 'rexfwang'
 medium_username: ''
-section_title: 'Projects'
+section_title: 'Personal projects'
 
 # Build settings
 markdown: kramdown

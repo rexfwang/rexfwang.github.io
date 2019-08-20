@@ -7,6 +7,23 @@
         <div class="row">
           <div class="col-md-12">
             
+            <h2 class="section-title text-center">Works</h2>
+            <div class="break"></div>
+
+            {% for post in paginator.posts %}
+            <div class="wow fadeIn">
+              {% if post.categories == "work" %}
+                {% if post.position == "left" %}
+                  {% include content-left.html %}
+                {% endif %}
+
+                {% if post.position == "right" %}
+                  {% include content-right.html %}
+                {% endif %}
+              {% endif %}
+            </div>
+            {% endfor %}
+
             {% if site.section_title != '' %}
             <h2 class="section-title text-center">{{ site.section_title }}</h2>
             {% endif %}
@@ -18,32 +35,17 @@
 
             {% for post in paginator.posts %}
               <div class="wow fadeIn">
-              {% if post.position == "left" %}
-                {% include content-left.html %}
-              {% endif %}
+              {% if post.categories == "project" %}
+                {% if post.position == "left" %}
+                  {% include content-left.html %}
+                {% endif %}
 
-              {% if post.position == "right" %}
-                {% include content-right.html %}
+                {% if post.position == "right" %}
+                  {% include content-right.html %}
+                {% endif %}
               {% endif %}
               </div>
-            {% endfor %}
-
-            <div class="break"></div>
-            <h2 class="section-title text-center">Works</h2>
-            <div class="break"></div>
-
-            {% for post in paginator.works %}
-            <div class="wow fadeIn">
-            {% if post.position == "left" %}
-              {% include content-left.html %}
-            {% endif %}
-
-            {% if post.position == "right" %}
-              {% include content-right.html %}
-            {% endif %}
-            </div>
-            {% endfor %}
-
+            {% endfor %}           
             {% include pagination.html %}
 
           </div>
