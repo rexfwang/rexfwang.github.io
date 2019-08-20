@@ -6,7 +6,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-
+            
             {% if site.section_title != '' %}
             <h2 class="section-title text-center">{{ site.section_title }}</h2>
             {% endif %}
@@ -26,6 +26,22 @@
                 {% include content-right.html %}
               {% endif %}
               </div>
+            {% endfor %}
+
+            <div class="break"></div>
+            <h2 class="section-title text-center">Works</h2>
+            <div class="break"></div>
+
+            {% for post in paginator.works %}
+            <div class="wow fadeIn">
+            {% if post.position == "left" %}
+              {% include content-left.html %}
+            {% endif %}
+
+            {% if post.position == "right" %}
+              {% include content-right.html %}
+            {% endif %}
+            </div>
             {% endfor %}
 
             {% include pagination.html %}
