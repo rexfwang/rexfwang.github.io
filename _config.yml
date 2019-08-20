@@ -22,7 +22,6 @@ twitter_username: ''
 github_username: 'rexfwang'
 medium_username: ''
 section_title: 'Personal projects'
-section_subtitle: "Projects I work on after work :)"
 
 # Build settings
 markdown: kramdown
