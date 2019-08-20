@@ -2,11 +2,11 @@
 layout: inner
 position: right
 title: 'improveTouch'
-date: 2019-08-16 02:00:00
+date: 2019-08-13 00:00:00
 categories: 'work'
 type: 'work'
-tags: Andorid ImageProcessing algorithm C
-featured_image: '/img/posts/surfacehub2.png'
+tags: Andorid ImageProcessing algorithm C Qualcomm
+featured_image: '/img/posts/improveTouch.png'
 project_link: 'https://youtu.be/YTP6QgljZ_o'
 button_icon: 'youtube'
 button_text: 'Youtube'
