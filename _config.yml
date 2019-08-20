@@ -15,14 +15,14 @@
 # in the templates via {{ site.myvariable }}.
 title: "Hello! I'm Rex Wang!"
 email: 'rex.f.wang@gmail.com'
-description: "I'm a software developer from Seattle, interesting in computer vision, machine learning and user interface.""
+description: "I'm a software developer from Seattle, interested in computer vision, machine learning and user interface."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://rexfwang.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ''
 github_username: 'rexfwang'
 medium_username: ''
 section_title: 'Personal projects'
-section_subtitle: 'Projects I worked on after work. I'm most intersted in computer vision and machine learning projects'
+section_subtitle: "Projects I worked on after work. I'm most interested in computer vision and machine learning projects"
 
 # Build settings
 markdown: kramdown
