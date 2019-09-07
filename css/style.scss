@@ -252,12 +252,12 @@ button.btn, input.btn {
     margin-bottom: 2em;
   }
   img.img-responsive {
+    margin: 0 auto;
     @include bp-xsmall {
       display: none;
     }
     @include bp-small {
       display: none;
-      margin-top: auto;
     }
   }
   .content {
