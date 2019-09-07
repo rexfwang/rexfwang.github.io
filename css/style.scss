@@ -257,6 +257,7 @@ button.btn, input.btn {
     }
     @include bp-small {
       display: none;
+      margin-top: auto;
     }
   }
   .content {
