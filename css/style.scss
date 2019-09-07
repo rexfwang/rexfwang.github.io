@@ -252,6 +252,7 @@ button.btn, input.btn {
     margin-bottom: 2em;
   }
   img.img-responsive {
+    margin-top: 5em;
     @include bp-xsmall {
       display: none;
     }
