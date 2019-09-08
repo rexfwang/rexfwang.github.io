@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: "Hello! I'm Rex Wang."
 email: 'rex.f.wang@gmail.com'
-description: "I'm a Microsoft software developer in Seattle. I work on computer vision, user interface, OS development and research project prototyping."
+description: "I'm a software developer at Microsoft in Seattle. I work on computer vision, user interface, OS development and research project prototyping."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://rexfwang.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ''
